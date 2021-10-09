@@ -7,8 +7,8 @@ function App() {
         <h1>guzus</h1>
         <p>
         currently : 
-        <li>am redesigning my "github.io page" from jekyll to react;</li>
-        <li>am working as 산업기능요원, which means I'm soldier now;</li>
+        <li>am redesigning "guzus.github.io" with react.js;</li>
+        <li>am working in a company as 산업기능요원, which means I'm soldier now;</li>
         </p>
         <div>
           <a href="https://blog.naver.com/guzus" className="App-link">
