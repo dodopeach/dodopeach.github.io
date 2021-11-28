@@ -3,3 +3,6 @@
 ```
 npm run deploy
 ```
+
+# TODO
+[ ] interactive visualization
