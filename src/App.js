@@ -47,6 +47,7 @@ function Home() {
   return (
     <>
       <h1>guzus</h1>
+      <p>contact : awesomepulsar@gmail.com</p>
       <p>
         currently :
         <li>
