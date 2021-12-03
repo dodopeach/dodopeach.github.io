@@ -15,12 +15,7 @@ function App() {
       <div>
         <div className="App">
           <header className="App-header">
-            <Link to="/">Home</Link>
-
             <Switch>
-              <Route path="/about">
-                <About />
-              </Route>
               <Route path="/career">
                 <Career />
               </Route>
@@ -47,25 +42,25 @@ function Home() {
   return (
     <>
       <h1>guzus</h1>
-      <p>contact : awesomepulsar@gmail.com</p>
+      
       <p>
         currently :
         <li>
-          interested in distributed systems, large-scale data engineering
+          interested in distributed systems, large-scale data engineering and finance
         </li>
-        <li>redesigning "guzus.github.io" with react.js;</li>
         <li>
-          working in a company as 산업기능요원, which means I'm soldier now;
+          working in a company as a (substitutional military service);
         </li>
       </p>
+
       <div>
         <a href="https://blog.naver.com/guzus" className="App-link">
-          blog
+          personal blog
         </a>
       </div>
       <div>
         <a href="https://twitter.com/sweetburgercom" className="App-link">
-          bitcoin twitter-bot : which is going pretty well
+          bitcoin twitter-bot : going pretty well
         </a>
       </div>
       <div>
@@ -80,24 +75,32 @@ function Home() {
       <div>
         <Link to="/thoughts" className="App-link">thoughts</Link>
       </div>
+      <div>
+        <a href="/" className="App-link">
+          awesomepulsar@gmail.com
+        </a>
+      </div>
     </>
   );
 }
 
-function About() {
-  return <h2>About</h2>;
-}
-
 function Thoughts() {
-  return <h2>Thoughts</h2>;
+  return (
+    <>
+      <Link to="/">Back</Link>
+      <h2>guzus | Thoughts</h2>
+    </>
+  );
 }
 
 function Career() {
   return (
     <>
-      <h2>Career</h2>
+      <Link to="/">Back</Link>
+      <h2>guzus | Career</h2>
       <ul>
         <li>NAVER corporation, backend engineering, July 2021 ~ August 2021</li>
+        <li>Juneung IT, backend engineering, October 2021 ~ </li>
       </ul>
     </>
   );
