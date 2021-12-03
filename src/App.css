@@ -1,6 +1,6 @@
 .App {
   text-align: start;
-  padding-left: 10%;
+  padding-left: 10vh;
 }
 
 .App-logo {
@@ -28,6 +28,9 @@
   color: #000000;
 }
 
+.Decorator {
+  padding-top: 10%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +38,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.blank_square {
+  display: flex;
+  width: 2vh;
+  height: 2vh;
+  border: 0.3vh solid black;
+  background-color: rgb(0, 0, 0);
+}
+
+.colored_square {
+  display: flex;
+  width: 2vh;
+  height: 2vh;
+  border: 0.3vh solid black;
+  background-color: rgb(255, 255, 255);
 }

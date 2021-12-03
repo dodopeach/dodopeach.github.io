@@ -80,6 +80,9 @@ function Home() {
           awesomepulsar@gmail.com
         </a>
       </div>
+      <div className="Decorator">
+        <TileDecorator></TileDecorator>
+      </div>
     </>
   );
 }
@@ -141,4 +144,41 @@ function Topics() {
 function Topic() {
   let { topicId } = useParams();
   return <h3>Requested topic ID: {topicId}</h3>;
+}
+
+function TileDecorator() {
+  function BlankSquare() {
+    return <div class="blank_square"></div>;
+  }
+  function ColoredSquare() {
+    return <div class="colored_square"></div>;
+  }
+  function toBox(c) {
+    if(c === 0) return <BlankSquare></BlankSquare>;
+    else return <ColoredSquare></ColoredSquare>;
+  }
+  const tiles = [
+    [0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1],
+    [1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1],
+    [1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1],
+  ];
+  return (
+    <>
+      <div>
+      <table>
+        <tbody>
+          {tiles.map((item) => {
+            return (
+              <tr>
+                {item.map((box) => {
+                  return (<td>{toBox(box)}</td>);
+                })}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+      </div>
+    </>
+  );
 }
