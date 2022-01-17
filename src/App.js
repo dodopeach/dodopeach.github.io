@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Career, Topics, Thoughts, TileDecorator } from "./components";
+import { Career, Topics, Thoughts, TileDecorator, Donate } from "./components";
 
 function App() {
   return (
@@ -18,6 +18,9 @@ function App() {
               </Route>
               <Route path="/thoughts">
                 <Thoughts />
+              </Route>
+              <Route path="/donate">
+                <Donate />
               </Route>
               <Route path="/">
                 <Home />
@@ -41,7 +44,7 @@ function Home() {
         currently :
         <li>interested in decentralized/distributed/large-scale systems</li>
         <li>
-          working in a tech company as a "substitutional military service";
+          working in a tech company as a "substitutional military service"
         </li>
       </p>
 
@@ -75,6 +78,11 @@ function Home() {
         <a href="/" className="App-link">
           awesomepulsar@gmail.com
         </a>
+      </div>
+      <div>
+        <Link to="/donate" className="App-link">
+          donate
+        </Link>
       </div>
       <div className="Decorator">
         <TileDecorator></TileDecorator>
