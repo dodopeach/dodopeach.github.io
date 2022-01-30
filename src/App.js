@@ -50,7 +50,7 @@ function Home() {
 
       <div>
         <a href="https://blog.naver.com/guzus" className="App-link">
-          personal blog
+          blog
         </a>
       </div>
       <div>
