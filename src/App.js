@@ -40,53 +40,61 @@ function Home() {
     <>
       <h1>guzus</h1>
 
-      <p>
-        currently :
-        <li>interested in decentralized/distributed/large-scale systems</li>
-        <li>
-          working in a tech company as a "substitutional military service"
-        </li>
-      </p>
+      <div className="paragraph">
+        <strong>bio</strong>
+        <ul>interested in decentralized/distributed/large-scale systems</ul>
+        <ul>
+          working at a tech company as a "substitutional military service"
+        </ul>
+      </div>
 
-      <div>
-        <a href="https://blog.naver.com/guzus" className="App-link">
-          blog
-        </a>
+      <div className="paragraph">
+        <strong>what i do</strong>
+        <ul>
+          <a href="https://blog.naver.com/guzus" className="App-link">
+            blog
+          </a>
+        </ul>
+        <ul>
+          <a href="https://twitter.com/sweetburgercom" className="App-link">
+            bitcoin tweet-bot
+          </a>
+        </ul>
+        <ul>
+          <a href="https://wordsisters.com" className="App-link">
+            wordsisters.com
+          </a>
+          : website for searching synonyms (it has an android app)
+        </ul>
+        <ul>
+          <Link to="/career" className="App-link">
+            career
+          </Link>
+        </ul>
+        <ul>
+          <Link to="/thoughts" className="App-link">
+            thoughts
+          </Link>
+        </ul>
       </div>
-      <div>
-        <a href="https://twitter.com/sweetburgercom" className="App-link">
-          bitcoin tweet-bot
-        </a>
+
+      <div className="paragraph">
+        <strong>contact</strong>
+        <ul>
+          <a href="/" className="App-link">
+            awesomepulsar@gmail.com
+          </a>
+        </ul>
+        <ul>
+          <Link to="/donate" className="App-link">
+            donate
+          </Link>
+        </ul>
       </div>
-      <div>
-        <a href="https://wordsisters.com" className="App-link">
-          wordsisters.com : website for searching synonyms (it has an android
-          app)
-        </a>
-      </div>
-      <div>
-        <Link to="/career" className="App-link">
-          career
-        </Link>
-      </div>
-      <div>
-        <Link to="/thoughts" className="App-link">
-          thoughts
-        </Link>
-      </div>
-      <div>
-        <a href="/" className="App-link">
-          awesomepulsar@gmail.com
-        </a>
-      </div>
-      <div>
-        <Link to="/donate" className="App-link">
-          donate
-        </Link>
-      </div>
-      <div className="Decorator">
+
+      {/* <div className="Decorator">
         <TileDecorator></TileDecorator>
-      </div>
+      </div> */}
     </>
   );
 }
