@@ -6,7 +6,7 @@ yarn start
 # How to Deploy
 
 ```
-npm run deploy
+yarn deploy
 ```
 
 # TODO
