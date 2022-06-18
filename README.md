@@ -1,3 +1,8 @@
+# How to dev
+
+```
+yarn start
+```
 # How to Deploy
 
 ```
