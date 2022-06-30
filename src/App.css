@@ -45,6 +45,10 @@
   background-color: rgb(255, 255, 255);
 }
 
-.paragraph > ul {
+ul {
   margin: 2vh;
+}
+
+ul > ul{
+  margin: 1vh;
 }

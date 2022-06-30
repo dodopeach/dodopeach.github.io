@@ -1,7 +1,8 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Career, Topics, Thoughts, TileDecorator, Donate } from "./components";
+import { Career, Topics, Thoughts, Donate } from "./components";
+import { AiOutlineLink } from "react-icons/ai";
 
 function App() {
   return (
@@ -42,27 +43,26 @@ function Home() {
 
       <div className="paragraph">
         <strong>bio</strong>
-        <ul>interested in decentralized/distributed/large-scale systems</ul>
-        <ul>
-          working at a tech company as a "substitutional military service"
-        </ul>
+        <ul>interested in system / computer system</ul>
+        <ul>working at a tech company</ul>
+        <ul>currently a soldier</ul>
       </div>
 
       <div className="paragraph">
         <strong>what i do</strong>
         <ul>
           <a href="https://blog.naver.com/guzus" className="App-link">
-            blog
+            blog <AiOutlineLink></AiOutlineLink>
           </a>
         </ul>
         <ul>
           <a href="https://twitter.com/sweetburgercom" className="App-link">
-            bitcoin tweet-bot
+            bitcoin tweet-bot <AiOutlineLink></AiOutlineLink>
           </a>
         </ul>
         <ul>
           <a href="https://wordsisters.com" className="App-link">
-            wordsisters.com
+            wordsisters.com <AiOutlineLink></AiOutlineLink>
           </a>
           : website for searching synonyms (it has an android app)
         </ul>
@@ -82,7 +82,7 @@ function Home() {
         <strong>contact</strong>
         <ul>
           <a href="/" className="App-link">
-            awesomepulsar@gmail.com
+            awesomepulsar@gmail.com <AiOutlineLink></AiOutlineLink>
           </a>
         </ul>
         <ul>
