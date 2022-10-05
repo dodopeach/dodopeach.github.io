@@ -1,6 +1,9 @@
 .App {
-  text-align: start;
-  padding-left: 10vw;
+  /* text-align: start; */
+  padding: 5vw;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70vw;
 }
 
 .App-header {
@@ -49,6 +52,6 @@ ul {
   margin: 2vh;
 }
 
-ul > ul{
+ul > ul {
   margin: 1vh;
 }
