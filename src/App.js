@@ -1,8 +1,8 @@
-import "./App.css";
-import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Career, Topics, Thoughts, Donate } from "./components";
-import { AiOutlineLink } from "react-icons/ai";
+import './App.css'
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { Career, Topics, Thoughts, Donate } from './components'
+import { AiOutlineLink } from 'react-icons/ai'
 
 function App() {
   return (
@@ -31,10 +31,10 @@ function App() {
         </div>
       </div>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
 
 function Home() {
   return (
@@ -67,6 +67,11 @@ function Home() {
           : website for searching synonyms (it has an android app)
         </ul>
         <ul>
+          <a href="https://memtherscan.xyz" className="App-link">
+            memtherscan.xyz <AiOutlineLink></AiOutlineLink>
+          </a>
+        </ul>
+        <ul>
           <Link to="/career" className="App-link">
             career
           </Link>
@@ -96,5 +101,5 @@ function Home() {
         <TileDecorator></TileDecorator>
       </div> */}
     </>
-  );
+  )
 }
